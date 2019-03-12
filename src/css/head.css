@@ -1,0 +1,30 @@
+.fxyy1>div .active{
+    background: #9b0909;
+  }
+
+
+.fxyy1{
+    height: 40px;width: 100%;background: #C20C0C;
+}
+.fxyy1>div{
+    width: 980px;height: 40px;
+    margin: 0 auto;
+
+}
+.fxyy1>div a{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 30px;
+    display: block;
+    float: left;
+    padding: 0 10px;
+    height: 20px;
+    padding: 0 15px;
+    line-height: 20px;
+    border-radius:20px ;
+    font-size: 14px;
+    font-style: normal;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
