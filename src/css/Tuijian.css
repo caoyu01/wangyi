@@ -71,7 +71,7 @@
     padding-top: 20px;
 }
 .tjw-r{
-    width: 250px;min-height:1780px ;overflow: hidden;
+    width: 250px;min-height:1000px ;overflow: hidden;
     float: right;
     border: 1px solid #dbdbdb;
 }
@@ -150,8 +150,8 @@
     width: 140px;height:140px ;display: block;
 }
 .tjw-l22 p{
-    width: 140px;height:25px;display: block;margin-top: 10px;
-    font-size: 12px;
+    width: 140px;height:35px;display: block;margin-top: 10px;
+    font-size: 12px;overflow: hidden;
 }
 .tjw-l22 .tjw-l228 li>span{
     width: 140px;height:38px;display: block;
@@ -301,6 +301,7 @@
     margin-left: 15px;position: absolute;left: 120px;width: 80px;text-align: center;
     display: none;
 }
+
 .tjw-l24l1 li span:nth-child(3) i:nth-child(2){margin-left: 8px;}
 .tjw-l24l1 li span:nth-child(3) i:nth-child(3){margin-left: 8px;}
 .tjw-l24l1 li:last-child span{margin-left: 140px;font-size: 12px;}
@@ -637,6 +638,7 @@
     cursor: pointer;
     border-radius:5px; 
     display: none;
+    
 
 }
 #tj-top span{

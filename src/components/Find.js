@@ -1,7 +1,14 @@
 import React from 'react';
 import '../css/Find.css';
-import Tuijian from './Tuijian';
+/* import Tuijian from './Tuijian'; */
+import Songlist from './Songlist';
+import AsyncComponent from "../async"
+
+
+
 import {HashRouter as Router,Route,Link,NavLink,Redirect,Switch} from 'react-router-dom';
+var Tuijian=AsyncComponent(()=>import('./Tuijian'));
+var Detail=AsyncComponent(()=>import('./Detail'))
 class Find extends React.Component{
     constructor(props){
         super(props)
@@ -16,8 +23,8 @@ class Find extends React.Component{
                         <div>
                             <div className='fxyy1'>
                                 <div>
-                                    <NavLink to='/tuijian'>推荐</NavLink>
-                                    <NavLink to='/phb'>排行榜</NavLink>
+                                    <NavLink to='/find/tuijian'>推荐</NavLink>
+                                    <NavLink to='/find/phb'>排行榜</NavLink>
                                     <NavLink to='/gd'>歌单</NavLink>
                                     <NavLink to='/mv'>MV</NavLink>
                                     {/* <NavLink to='/gs'>歌手</NavLink> */}
@@ -26,16 +33,16 @@ class Find extends React.Component{
                                 </div>
                             </div>
     
-                            <Switch>
                                 <Route path='/find/tuijian' component={Tuijian}></Route> 
+                                <Route path="/find/songlist" component={Songlist}></Route>
+                                <Route path="/find/detail:id" component={Detail}></Route>
+
                                 {/* <Route path='/phb' component={Phb}></Route>
                                 <Route path='/gd' component={Gd}></Route>  
                                 <Route path='/mv' component={Mv}></Route> 
                                 <Route path='/gs' component={Gs}></Route>
                                 <Route path='/xdsj' component={Xdsj}></Route> 
                                 <Route path='/list3' component={List3}></Route>   */}            
-                               <Redirect to='/find/tuijian'/> 
-                            </Switch>
                         </div>
                     </Router>
                 </div>
